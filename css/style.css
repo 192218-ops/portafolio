@@ -15,3 +15,44 @@
 .nav-links { display: flex; list-style: none; gap: 30px; }
 .nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 500; transition: 0.3s; }
 .nav-links a:hover { color: var(--blue); }
+
+/* 4. HERO SECTION */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%);
+    padding-top: 70px;
+}
+
+.hero-flex { 
+    display: flex; 
+    align-items: center; 
+    gap: 50px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--white);
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+}
+
+.hero-content h1 { font-size: 3.5rem; margin-bottom: 10px; color: var(--primary); }
+.hero-content h2 { font-size: 1.8rem; color: var(--blue); margin-bottom: 15px; }
+
+.social-links { display: flex; gap: 15px; }
+.social-links a {
+    padding: 10px;
+    background: var(--white);
+    border-radius: 50%;
+    color: var(--text-muted);
+    box-shadow: var(--shadow);
+    display: flex;
+    transition: var(--transition);
+}
+.social-links a:hover { transform: translateY(-3px); color: var(--blue); }
